@@ -28,6 +28,10 @@ $(document).ready(function () {
                     },
                     notEmpty: {
                         message: 'Please enter your Last Name'
+                    },
+                    regexp: {
+                        regexp: /^[A-Za-z]*[A-Za-z][A-Za-z]*$/,
+                        message: 'Last Name can only consist of alphabetical'
                     }
                 }
             },
@@ -76,7 +80,7 @@ $(document).ready(function () {
                 validators: {
                     stringLength: {
                         min: 12,
-                        max: 12
+                        message: 'Please enter your Contact No in the folowing format'
                     },
                     notEmpty: {
                         message: 'Please enter your Contact No.'
